@@ -28,6 +28,7 @@ public class Romain {
 	public static void main(String[] args) {
 		Romain patrick = new Romain("Patrick",4);
 		System.out.println(patrick.prendreParole());
-		System.out.println(patrick.parler("Feur"));
+		patrick.parler("Feur");
+		patrick.recevoirCoup(6);
 }
 }

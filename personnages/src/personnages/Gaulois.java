@@ -19,8 +19,8 @@ public class Gaulois {
 		return "Le gaulois " + nom + " : ";
 }
 	public void frapper(Romain romain) {
-		romain.recevoirCoup(force / 3);
 		System.out.println(nom + " envoie un grand coup dans la mâchoire de " + romain.getNom());
+		romain.recevoirCoup(force / 3);
 }
 	
 	@Override
@@ -34,5 +34,6 @@ public class Gaulois {
 		Romain patrick = new Romain("Patrick",4);
 		System.out.println(asterix);
 		System.out.println(asterix.prendreParole());
+		asterix.frapper(patrick);
 	}
 }
