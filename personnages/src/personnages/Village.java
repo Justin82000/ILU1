@@ -34,8 +34,11 @@ public class Village {
 	}
 	public static void main(String[] args) {
 		
-		 Village village = new Village("Village des Irreductible", 30);
-			/* village.trouverHabitant(30); */
+		Village village = new Village("Village des Irreductible", 30);
+		/*
+		 * village.trouverHabitant(30); Erreur, l'indice 30 ne possede pas d'attribut
+		 * Gaulois
+		 */
 		Chef abraracourcix = new Chef("Abraracourcix",6,village);
 		village.setChef(abraracourcix);
 		Gaulois asterix = new Gaulois("Asterix",8);
