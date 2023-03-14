@@ -5,11 +5,11 @@ public class Village {
 	private Chef chef;
 	private int nbVillageois = 0;
 	private int nbVillageoisMax;
-	private Gaulois villageois[];
+	private Gaulois villageois[] = new Gaulois[nbVillageoisMax];
 	
-	public Village(String nom,int nbVillageoisMax) {
-		this.nom = nom;
-		this.villageois = new Gaulois[nbVillageoisMax];	
+	public Village(String nom, int nbVillageoisMax) {
+		this.nom = nom;	
+		this.nbVillageoisMax = nbVillageoisMax;
 	}	
 	public void ajouterHabitant(Gaulois gaulois) {
 		villageois[nbVillageois] = gaulois;
